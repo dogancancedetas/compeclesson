@@ -19,10 +19,14 @@ namespace LessonBasic
 
         [SerializeField] private Vector3 ucFloat = new Vector3(1, 2, 3);
 
+        //First lesson property
+        public float FloatProperty { get; private set; }
+
         // Start is called before the first frame update
         void Start()
         {
-
+            ondalikSayi = 1000;
+            FloatProperty = 1000000;
         }
 
         // Update is called once per frame
