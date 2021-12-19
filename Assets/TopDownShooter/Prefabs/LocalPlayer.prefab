@@ -336,6 +336,8 @@ GameObject:
   - component: {fileID: 3292393014413001557}
   - component: {fileID: 601005934359778190}
   - component: {fileID: 1260634830}
+  - component: {fileID: 6148794894439423616}
+  - component: {fileID: 6904576839174411575}
   m_Layer: 6
   m_Name: TankFree_Blue
   m_TagString: Untagged
@@ -424,6 +426,38 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.9107852, y: 1.452945, z: 2.6642036}
   m_Center: {x: 0.06, y: -0.12, z: -0.038929224}
+--- !u!114 &6148794894439423616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7091883237029345301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b511a0e18124f14488d320eacadcfcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rigidbody: {fileID: 6904576839174411575}
+  _inputData: {fileID: 11400000, guid: 06d58daf99ee22b44aaf69a37852e451, type: 2}
+  _targetTransform: {fileID: 8881032868617326500}
+  _playerMovementSettings: {fileID: 11400000, guid: 1705ed84488bbaa4a9689b51cfcab203, type: 2}
+--- !u!54 &6904576839174411575
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7091883237029345301}
+  serializedVersion: 2
+  m_Mass: 100
+  m_Drag: 10
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!1 &8137442670726863620
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,9 +632,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8244950083710509690}
-  - component: {fileID: 8744890174034701375}
   - component: {fileID: 7087846357402854955}
-  - component: {fileID: 2022095007}
   - component: {fileID: 8014752780224747362}
   m_Layer: 6
   m_Name: LocalPlayer
@@ -624,22 +656,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &8744890174034701375
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8244950083710509693}
-  serializedVersion: 2
-  m_Mass: 100
-  m_Drag: 10
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 80
-  m_CollisionDetection: 0
 --- !u!114 &7087846357402854955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -653,24 +669,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cameraSettings: {fileID: 11400000, guid: 87d22122449e92c4abf1be6f030e8555, type: 2}
-  _targetTransform: {fileID: 8244950083710509690}
+  _rotationTarget: {fileID: 7664673684930228746}
+  _positionTarget: {fileID: 8881032868617326500}
   _cameraTransform: {fileID: 8244950083013331274}
---- !u!114 &2022095007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8244950083710509693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b511a0e18124f14488d320eacadcfcc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rigidbody: {fileID: 8744890174034701375}
-  _inputData: {fileID: 11400000, guid: 77379ef555ef3374290dcda345add3ca, type: 2}
-  _targetTransform: {fileID: 0}
-  _playerMovementSettings: {fileID: 11400000, guid: 1705ed84488bbaa4a9689b51cfcab203, type: 2}
 --- !u!114 &8014752780224747362
 MonoBehaviour:
   m_ObjectHideFlags: 0
