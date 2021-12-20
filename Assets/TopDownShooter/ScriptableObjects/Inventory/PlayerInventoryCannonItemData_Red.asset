@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bec436bd1765d9458ffe385c87f457a, type: 3}
+  m_Name: PlayerInventoryCannonItemData_Red
+  m_EditorClassIdentifier: 
+  _itemID: red_cannon
+  _InventoryItemDataType: 0
+  _prefab: {fileID: 7534887386320498988, guid: a303fc5ec0b1a2046a8576fa1e5c5104, type: 3}
+  _damage: 0

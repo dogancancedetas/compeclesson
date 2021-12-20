@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _inventoryItemDataArray:
   - {fileID: 11400000, guid: ad2a3a58697feb44b9c88e0c1b9a0afe, type: 2}
-  - {fileID: 11400000, guid: 2a4a37252b9e47c49b68b0adb3c09d2b, type: 2}
+  - {fileID: 11400000, guid: 8071cd74283e8be40830e04bf0b472d7, type: 2}
   parent: {fileID: 511988809}
 --- !u!4 &511988809
 Transform:
